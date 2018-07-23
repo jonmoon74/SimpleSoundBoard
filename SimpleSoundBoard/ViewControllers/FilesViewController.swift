@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class FilesViewController: UIViewController {
 
@@ -17,5 +18,8 @@ class FilesViewController: UIViewController {
     }
 
 
-
+    @IBAction func logoutTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
 }

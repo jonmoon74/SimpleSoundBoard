@@ -14,6 +14,8 @@
 		457F9502210512D4000B4492 /* FilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457F9501210512D4000B4492 /* FilesViewController.swift */; };
 		457F9504210512E9000B4492 /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457F9503210512E9000B4492 /* RecordingViewController.swift */; };
 		457F95072105176B000B4492 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457F95062105176B000B4492 /* LoginViewController.swift */; };
+		45FC6DA7210661F900AEDCF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45FC6DA6210661F900AEDCF7 /* GoogleService-Info.plist */; };
+		9AD611488A57EA2004566D6D /* Pods_SimpleSoundBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C738581488593CCB66738CD2 /* Pods_SimpleSoundBoard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		457F9501210512D4000B4492 /* FilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesViewController.swift; sourceTree = "<group>"; };
 		457F9503210512E9000B4492 /* RecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
 		457F95062105176B000B4492 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
+		45FC6DA6210661F900AEDCF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		49C25E5FFA7DB549D5C44DD3 /* Pods-SimpleSoundBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleSoundBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleSoundBoard/Pods-SimpleSoundBoard.release.xcconfig"; sourceTree = "<group>"; };
+		7EB1BB1722E7879DB8832969 /* Pods-SimpleSoundBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleSoundBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleSoundBoard/Pods-SimpleSoundBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		C738581488593CCB66738CD2 /* Pods_SimpleSoundBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleSoundBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AD611488A57EA2004566D6D /* Pods_SimpleSoundBoard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 			children = (
 				457F94EE210510F9000B4492 /* SimpleSoundBoard */,
 				457F94ED210510F9000B4492 /* Products */,
+				8ECE06838C6E6D5E26B032AE /* Pods */,
+				7E92A852D39A3CD5A8AC6BF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +73,7 @@
 				457F94F6210510FB000B4492 /* Assets.xcassets */,
 				457F94F8210510FB000B4492 /* LaunchScreen.storyboard */,
 				457F94FB210510FB000B4492 /* Info.plist */,
+				45FC6DA6210661F900AEDCF7 /* GoogleService-Info.plist */,
 			);
 			path = SimpleSoundBoard;
 			sourceTree = "<group>";
@@ -78,6 +88,23 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
+		7E92A852D39A3CD5A8AC6BF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C738581488593CCB66738CD2 /* Pods_SimpleSoundBoard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8ECE06838C6E6D5E26B032AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EB1BB1722E7879DB8832969 /* Pods-SimpleSoundBoard.debug.xcconfig */,
+				49C25E5FFA7DB549D5C44DD3 /* Pods-SimpleSoundBoard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 457F94FE210510FB000B4492 /* Build configuration list for PBXNativeTarget "SimpleSoundBoard" */;
 			buildPhases = (
+				9950CD3F6D27FDD6DC952385 /* [CP] Check Pods Manifest.lock */,
 				457F94E8210510F9000B4492 /* Sources */,
 				457F94E9210510F9000B4492 /* Frameworks */,
 				457F94EA210510F9000B4492 /* Resources */,
+				6285D8E00CFC4FE3836406A4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -137,12 +166,58 @@
 			buildActionMask = 2147483647;
 			files = (
 				457F94FA210510FB000B4492 /* LaunchScreen.storyboard in Resources */,
+				45FC6DA7210661F900AEDCF7 /* GoogleService-Info.plist in Resources */,
 				457F94F7210510FB000B4492 /* Assets.xcassets in Resources */,
 				457F94F5210510F9000B4492 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6285D8E00CFC4FE3836406A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SimpleSoundBoard/Pods-SimpleSoundBoard-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SimpleSoundBoard/Pods-SimpleSoundBoard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9950CD3F6D27FDD6DC952385 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleSoundBoard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		457F94E8210510F9000B4492 /* Sources */ = {
@@ -294,6 +369,7 @@
 		};
 		457F94FF210510FB000B4492 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EB1BB1722E7879DB8832969 /* Pods-SimpleSoundBoard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -312,6 +388,7 @@
 		};
 		457F9500210510FB000B4492 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49C25E5FFA7DB549D5C44DD3 /* Pods-SimpleSoundBoard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
