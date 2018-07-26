@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -107,7 +108,10 @@
                                 <action selector="logoutTapped:" destination="k85-Hd-kVh" id="tIu-Rf-aNF"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="L0f-fM-XZv"/>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="L0f-fM-XZv"/>
+                            <barButtonItem systemItem="action" id="RKj-Vm-Lf4"/>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <segue destination="KVe-bI-PfG" kind="show" identifier="recordSegue" id="B58-Au-CGD"/>
@@ -124,9 +128,52 @@
                     <view key="view" contentMode="scaleToFill" id="Xpp-HD-nwf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5j-vo-0Z2">
+                                <rect key="frame" x="170" y="367" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="KVe-bI-PfG" eventType="touchUpInside" id="XVw-mB-nsD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tTt-9C-g3c">
+                                <rect key="frame" x="170" y="209" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Plat"/>
+                                <connections>
+                                    <action selector="playButtonTapped:" destination="KVe-bI-PfG" eventType="touchUpInside" id="D0z-iL-0ta"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJL-eg-LKs">
+                                <rect key="frame" x="163" y="113" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="recordStopButton:" destination="KVe-bI-PfG" eventType="touchUpInside" id="0E2-KO-Z4g"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2XW-Zv-uQd">
+                                <rect key="frame" x="10" y="297" width="355" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2XW-Zv-uQd" firstAttribute="centerX" secondItem="Xpp-HD-nwf" secondAttribute="centerX" id="JLQ-6H-z9C"/>
+                            <constraint firstItem="2XW-Zv-uQd" firstAttribute="leading" secondItem="5Xf-cW-71Y" secondAttribute="leading" constant="10" id="qhI-dO-twL"/>
+                            <constraint firstItem="5Xf-cW-71Y" firstAttribute="trailing" secondItem="2XW-Zv-uQd" secondAttribute="trailing" constant="10" id="uy8-a7-hEZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5Xf-cW-71Y"/>
                     </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="2XW-Zv-uQd" id="j9y-i8-cuI"/>
+                        <outlet property="playButton" destination="tTt-9C-g3c" id="MmW-mK-jGH"/>
+                        <outlet property="recordStopButton" destination="aJL-eg-LKs" id="nqn-Su-LC7"/>
+                        <outlet property="saveButton" destination="K5j-vo-0Z2" id="Fvv-dQ-jgG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XZl-pR-gzu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
