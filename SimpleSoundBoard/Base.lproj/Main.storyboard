@@ -110,7 +110,11 @@
                         </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="L0f-fM-XZv"/>
-                            <barButtonItem systemItem="action" id="RKj-Vm-Lf4"/>
+                            <barButtonItem systemItem="action" id="RKj-Vm-Lf4">
+                                <connections>
+                                    <action selector="shareButtonTapped:" destination="k85-Hd-kVh" id="6di-1E-PIB"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
