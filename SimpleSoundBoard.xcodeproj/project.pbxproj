@@ -14,6 +14,7 @@
 		457F9502210512D4000B4492 /* FilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457F9501210512D4000B4492 /* FilesViewController.swift */; };
 		457F9504210512E9000B4492 /* RecordingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457F9503210512E9000B4492 /* RecordingViewController.swift */; };
 		457F95072105176B000B4492 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457F95062105176B000B4492 /* LoginViewController.swift */; };
+		45E92796210BADD1000A427B /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E92795210BADD1000A427B /* Sounds.swift */; };
 		45FC6DA7210661F900AEDCF7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 45FC6DA6210661F900AEDCF7 /* GoogleService-Info.plist */; };
 		9AD611488A57EA2004566D6D /* Pods_SimpleSoundBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C738581488593CCB66738CD2 /* Pods_SimpleSoundBoard.framework */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		457F9501210512D4000B4492 /* FilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesViewController.swift; sourceTree = "<group>"; };
 		457F9503210512E9000B4492 /* RecordingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewController.swift; sourceTree = "<group>"; };
 		457F95062105176B000B4492 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
+		45E92795210BADD1000A427B /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
 		45FC6DA6210661F900AEDCF7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		49C25E5FFA7DB549D5C44DD3 /* Pods-SimpleSoundBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleSoundBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleSoundBoard/Pods-SimpleSoundBoard.release.xcconfig"; sourceTree = "<group>"; };
 		7EB1BB1722E7879DB8832969 /* Pods-SimpleSoundBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleSoundBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleSoundBoard/Pods-SimpleSoundBoard.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			children = (
 				457F95062105176B000B4492 /* LoginViewController.swift */,
 				457F9501210512D4000B4492 /* FilesViewController.swift */,
+				45E92795210BADD1000A427B /* Sounds.swift */,
 				457F9503210512E9000B4492 /* RecordingViewController.swift */,
 			);
 			path = ViewControllers;
@@ -226,6 +229,7 @@
 			files = (
 				457F9504210512E9000B4492 /* RecordingViewController.swift in Sources */,
 				457F9502210512D4000B4492 /* FilesViewController.swift in Sources */,
+				45E92796210BADD1000A427B /* Sounds.swift in Sources */,
 				457F95072105176B000B4492 /* LoginViewController.swift in Sources */,
 				457F94F0210510F9000B4492 /* AppDelegate.swift in Sources */,
 			);

@@ -66,7 +66,9 @@ class RecordingViewController: UIViewController {
     @IBAction func saveButtonTapped(_ sender: Any) {
         
         
-        
+        let sound = Sound()
+        sound.name = nameTextField.text!
+        sound.audio = NSData(contentsOf: audioURL!) as Data?
         
     }
     
